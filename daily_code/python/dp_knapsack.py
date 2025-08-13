@@ -25,12 +25,12 @@ def dp_kp(n,w): #m:
     #Guard Against Negative Capacity :m
     if(weight[n-1] > w):
         dp[n][w] = dp_kp(n-1, w)
-        return dp[n][w]
+        return dp[n][w] #m:
     #4) Finally run dp
     else:
                     #Not taking item n  and     taking item
         dp[n][w] = max( dp_kp(n-1,w)          , value[n-1] + dp_kp(n-1, w-weight[n-1]) ) #m:, #c:[n], #c:dp(), #c:value[n]/weight[n]
-        return dp[n][w]
+        return dp[n][w] #m:
 #Setup variables
 # value = [12, 34, 82]
 # weight = [2, 10, 3]
