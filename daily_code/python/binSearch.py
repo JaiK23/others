@@ -50,3 +50,23 @@ def BinarySearch(high, low, sorted_arr, val):
         
     return None #w: else  
 
+
+'''
+Mental movie: search using high and low value,   
+
+'''
+# 16-08-2025: 15:51
+def bin_search(k, arr):
+   low = 0
+   high = len(arr) -1
+   mid = (low+high)//2
+
+   while low <= high: #c: for _ in range(0,len(arr)):
+    if k < arr[mid]: #c: low
+     low = mid +1 #c: low
+
+    elif k > arr[mid]: #c: high
+      high = mid - 1   #c: high
+
+    if k == arr[mid]:
+       return mid
