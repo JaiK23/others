@@ -18,7 +18,21 @@ document.addEventListener('DOMContentLoaded', () => {
             <button id="Set Budget">To track expense</button> //Add dropdown for montly , weekly and daily
             <button id="Show visualization">To track expense</button>
             <button id="Add bought items manually">To track expense</button>
-*/
+2)To implement for each button
+
+3) connectivity with MongoDB
+
+4) Secure from basic cyber-threats and protection of user's data
+
+
+.
+.
+.
+X) Finally deploy on netlify to view website
+
+#Scale to reduce traffic load
+#rollbacks(not needed neccesarily tho)
+            */
     const trackBTN = document.getElementById('track-expense');
 
     if (trackBTN) {
